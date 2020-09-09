@@ -30,6 +30,6 @@ public class Kata {
             }
             charSum.put(text, sum);
         }
-        return charSum.entrySet().stream().filter(k -> k.getValue() == max.get()).findAny().get().getKey();
+        return charSum.entrySet().stream().filter(k -> k.getValue() == max.get()).findFirst().get().getKey();
     }
 }
