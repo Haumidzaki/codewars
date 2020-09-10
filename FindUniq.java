@@ -30,7 +30,7 @@ public class FindUniq {
             res = first;
         } else {
             for (Double d : arr) {
-                if ((d.compareTo(first) == 1) || (d.compareTo(first) == -1)) {
+                if (d.compareTo(first) != 0) {
                     res = d;
                 }
             }
