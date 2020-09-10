@@ -14,7 +14,7 @@ Find the unique string
 Find The Unique
 */
 
-public class Kata {
+public class FindUniq {
     public static double findUniq(double arr[]) {
         double first = arr[0];
         int count = 0;
