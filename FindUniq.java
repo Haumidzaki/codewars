@@ -32,6 +32,7 @@ public class FindUniq {
             for (Double d : arr) {
                 if (d.compareTo(first) != 0) {
                     res = d;
+                    break;
                 }
             }
         }
