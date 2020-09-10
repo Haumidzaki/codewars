@@ -14,28 +14,27 @@ Find the unique string
 Find The Unique
 */
 
-public class FindUniq {
-
+public class Kata {
     public static double findUniq(double arr[]) {
         double first = arr[0];
         int count = 0;
         double res = 0;
 
-       for (int i = 1; i < arr.length; i++){
+        for (int i = 1; i < arr.length; i++) {
 
-           if(Double.compare(first,arr[i]) == 0) count++;
-           if(count == 3)  break;
-       }
+            if (Double.compare(first, arr[i]) == 0) count++;
+            if (count == 3) break;
+        }
 
-       if(count == 0){
-           res = first;
-       }else {
-           for (Double d : arr){
-               if((d.compareTo(first) == 1) || (d.compareTo(first) == -1)){
-                   res = d;
-               }
-           }
-       }
+        if (count == 0) {
+            res = first;
+        } else {
+            for (Double d : arr) {
+                if ((d.compareTo(first) == 1) || (d.compareTo(first) == -1)) {
+                    res = d;
+                }
+            }
+        }
         return res;
     }
 }
